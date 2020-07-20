@@ -22,4 +22,4 @@
        - device_name: /dev/sda1
          volume_size: 15
          delete_on_termination: true
-     count: 1
+     count: 11
