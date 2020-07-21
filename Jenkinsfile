@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('ValidatingCFT') {
             steps {
-                echo 'Validating CFT..'
-                sh "aws cloudformation validate-template --template-body file://deployEC2CFT.json"
+                echo 'Validating CFT..' 
+                sh "aws cloudformation validate-template --template-body file://deployEC2CFT.json --region 'us-east-1'"
             }
         }
         stage('Deploy') {
