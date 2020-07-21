@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Validating CFT') {
+        stage('ValidatingCFT') {
             steps {
                 echo 'Validating CFT..'
                 sh "aws cloudformation validate-template --template-body file://deployEC2CFT.json"
