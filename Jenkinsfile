@@ -11,7 +11,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                sh "aws cloudformation crate-stack --stack-name jenkins-ec2-cft --template-body file://deployEC2CFT.json --region 'us-east-1' "
+                sh "aws cloudformation crate-stack --stack-name jenkins-ec2-cft --template-body file://deployEC2CFT.json --region 'us-east-1'"
             }
         }
     }
